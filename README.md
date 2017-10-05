@@ -34,3 +34,5 @@ Run it!
 * Thanks stackoverflow as always
 * Thanks FFMPEG
 
+# Issues
+Please open a 'New issue' https://github.com/tb582/ffmpeg_install-script/issues I'll do my best to resolve. OR better yet pull the code fix it yourself and then we'll get it merged into master for everyone to enjoy!
