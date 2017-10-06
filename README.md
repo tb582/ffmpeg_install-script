@@ -9,10 +9,16 @@ These instructions will get you a copy of the project up and running.
 ### Prerequisites
 
 Centos7
+wget
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
+
+Ensure wget is installed
+```
+yum install wget
+```
 
 Download the script
 ```
