@@ -26,7 +26,7 @@ chmod +x ffmpeg.sh
 
 Run it!
 ```
-./ffmpeg.sh
+./ffmpeg.sh | tee -a install_ffmpeg.log
 ```
 
 ## Acknowledgments
