@@ -9,8 +9,7 @@
 #bash_version    :4.2.46(1)-release (x86_64-redhat-linux-gnu)
 #==============================================================================
 
-today=$(date +%Y%m%d)
-div=======================================
+set -e
 
 #Ensure Dependencies are installed and avail
 sudo yum -y -q -e 0 install yum-utils
@@ -185,3 +184,4 @@ make
 make install
 hash -r
 EOF
+exit 0
