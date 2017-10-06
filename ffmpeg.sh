@@ -14,6 +14,7 @@ div=======================================
 
 #Ensure Dependencies are installed and avail
 sudo yum install yum-utils
+sudo yum install unzip
 sudo yum-config-manager --add-repo http://www.nasm.us/nasm.repo
 sudo yum install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
 mkdir ~/ffmpeg_sources
