@@ -22,7 +22,7 @@ yum install wget
 
 Download the script
 ```
-wget https://raw.githubusercontent.com/tb582/ffmpeg_install-script/master/ffmpeg.sh
+curl -O https://raw.githubusercontent.com/tb582/ffmpeg_install-script/master/ffmpeg.sh
 ```
 
 update permissions
