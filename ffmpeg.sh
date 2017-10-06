@@ -13,13 +13,13 @@ today=$(date +%Y%m%d)
 div=======================================
 
 #Ensure Dependencies are installed and avail
-sudo yum -y install yum-utils
-sudo yum -y install unzip
+sudo yum -y -q -e 0 install yum-utils
+sudo yum -y -q -e 0 install unzip
 sudo yum-config-manager --add-repo http://www.nasm.us/nasm.repo
-sudo yum -y install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
+sudo yum -y -q -e 0 install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
 mkdir ~/ffmpeg_sources
 cd ~
-sudo yum -y install yasm
+sudo yum -y -q -e 0 install yasm
 sudo make install
 
 #Compile and Install
@@ -27,7 +27,7 @@ sudo make install
 #NASM
 cd /etc/yum.repo.d/
 wget http://nasm.us/nasm.repo
-sudo yum -y install nasm
+sudo yum -y -q -e 0 install nasm
 
 #libx264
 cd ~/ffmpeg_sources
@@ -127,7 +127,7 @@ rm cronjob
 
 cat > ~/ffmpeg_update.sh << EOF
 rm -rf ~/ffmpeg_build ~/bin/{ffmpeg,ffprobe,ffserver,lame,x264,x265}
-sudo yum -y install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
+sudo yum -y -q -e 0 install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
 
 # Update x264
 cd ~/ffmpeg_sources/x264
