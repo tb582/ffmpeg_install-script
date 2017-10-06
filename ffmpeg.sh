@@ -121,8 +121,8 @@ make install
 hash -r
 
 # Create a weekly cron to keep things updated
-rm ~/ffmpeg_update.sh
 touch  ~/ffmpeg_update.sh
+chmod +x ffmpeg_update.sh
 echo "0 0 7 * * ~/ffmpeg_update.sh > ~/cron.log" >> cronjob
 crontab cronjob
 rm cronjob
