@@ -8,7 +8,10 @@
 #notes	         :We'll	use this as our	general	guide and fix/correct issues as	we find	them https://trac.ffmpeg.org/wiki/CompilationGuide/Centos
 #bash_version    :4.2.46(1)-release (x86_64-redhat-linux-gnu)
 #==============================================================================
+#lets track how long this takes
+START=$(date +%s)
 
+#if there's any issues exit
 set -e
 
 #Ensure Dependencies are installed and avail
@@ -184,4 +187,7 @@ make
 make install
 hash -r
 EOF
+END=$(date +%s)
+DIFF=$(( $END - $START ))
+echo "Install took $DIFF seconds"
 exit 0
